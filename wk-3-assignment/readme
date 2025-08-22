@@ -1,0 +1,42 @@
+# Discount Calculator
+
+## Description
+A simple Python program that calculates the final price of an item after applying a discount. If the discount is 20% or higher, it will be applied to the original price. Otherwise, the original price is returned unchanged.
+
+## How it works
+1. The program asks you to enter the original price of an item
+2. Then it asks for the discount percentage
+3. If the discount is 20% or more, it calculates the new price
+4. If the discount is less than 20%, no discount is applied
+5. Finally, it shows you the original price, discount, and final price
+
+## Example Usage
+```
+Enter the original price of the item: $100
+Enter the discount percentage: 25
+
+Original price: $100.00
+Discount percentage: 25.0%
+Final price after discount: $75.00
+You saved: $25.00
+```
+
+## Requirements
+- Python 3.x
+
+## How to run
+1. Save the code in a file (e.g., `discount_calculator.py`)
+2. Open terminal/command prompt
+3. Run: `python discount_calculator.py`
+4. Follow the prompts to enter price and discount
+
+## Features
+- Handles invalid input (letters instead of numbers)
+- Shows how much money you saved when discount is applied
+- Formats prices to 2 decimal places (like $100.00)
+- Clear messages about whether discount was applied or not
+
+## Code Structure
+- `calculate_discount()` function: Does the math calculation
+- Main program: Gets user input and displays results
+- Error handling: Catches invalid number entries
