@@ -1,0 +1,74 @@
+# File Handling Programs 📁
+
+## 📝 Description
+Two simple Python programs that demonstrate file handling with proper error handling.
+
+## 📚 Programs Included
+
+### 1. File Modifier (`file_modifier.py`)
+Reads a text file, converts all text to uppercase, and saves it as a new file with "modified_" prefix.
+
+### 2. Error Handler (`error_handler.py`)
+Asks user for a filename and safely reads the file content while handling common errors.
+
+## 🚀 How to Use
+
+### File Modifier:
+1. Create a text file (e.g., `sample.txt`) in the same folder
+2. Run: `python file_modifier.py`
+3. Enter the filename when prompted
+4. A new file `modified_sample.txt` will be created
+
+### Error Handler:
+1. Run: `python error_handler.py`
+2. Enter any filename when prompted
+3. Program will display file contents or appropriate error message
+
+## ✨ Features
+
+### File Modifier:
+- Reads any text file
+- Converts content to uppercase
+- Creates new file with "modified_" prefix
+- Handles file not found errors
+
+### Error Handler:
+- Handles file not found errors
+- Handles permission denied errors
+- Handles other unexpected errors
+- User-friendly error messages
+
+## 💡 Example Usage
+
+### File Modifier:
+```
+Enter filename to read: sample.txt
+Created modified_sample.txt successfully!
+```
+
+### Error Handler:
+```
+Enter filename to read: nonexistent.txt
+Error: Sorry, 'nonexistent.txt' was not found!
+```
+
+## ⚙️ Requirements
+- Python 3.x
+- Text files to read (for testing)
+
+## 🛡️ Error Handling
+Both programs handle common file errors:
+- `FileNotFoundError`: When file doesn't exist
+- `PermissionError`: When file can't be read due to permissions
+- `Exception`: Catch-all for other unexpected errors
+
+## 📝 Notes
+- Make sure text files are in the same folder as the Python scripts
+- Programs work with `.txt` files and other plain text formats
+- New files are created in the same directory as the script
+
+## 🎯 Learning Outcomes
+- File reading and writing operations
+- Exception handling with try/except blocks
+- User input handling
+- Basic Python file I/O concepts
