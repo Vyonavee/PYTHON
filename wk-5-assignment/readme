@@ -1,0 +1,52 @@
+Smartphone Class - Python OOP Assignment
+📖 Overview
+
+This project demonstrates Object-Oriented Programming (OOP) concepts in Python by creating a simple Smartphone class.
+The class includes attributes, methods, and shows the use of constructors and inheritance.
+
+🏗️ Features
+
+Device (Parent Class):
+
+Stores basic details like brand and model.
+
+Has a method device_info() to display device details.
+
+Smartphone (Child Class):
+
+Inherits from Device.
+
+Adds extra attributes: storage (in GB) and battery (in mAh).
+
+Methods:
+
+phone_info() → shows full phone details.
+
+charge(amount) → simulates charging the phone.
+
+install_app(app_name, size) → installs an app and reduces available storage.
+
+📝 Example Usage
+phone1 = Smartphone("Samsung", "Galaxy S21", 128, 4000)
+phone2 = Smartphone("Apple", "iPhone 13", 256, 3500)
+
+print(phone1.phone_info())  
+# Output: Device: Samsung Galaxy S21, Storage: 128GB, Battery: 4000mAh
+
+print(phone1.install_app("WhatsApp", 2))  
+# Output: Installed WhatsApp. Remaining storage: 126GB
+
+print(phone1.charge(500))  
+# Output: Galaxy S21 charged! New battery level: 4500mAh
+
+🎯 Concepts Shown
+
+Class & Object creation
+
+Constructors (__init__)
+
+Inheritance
+
+Encapsulation of attributes & methods
+
+Polymorphism (overriding device_info in child class)
